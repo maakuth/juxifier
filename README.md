@@ -19,7 +19,7 @@ Target is to run this as a script in Home Assistant, controlling [pumpunjuksauti
 ## Building blocks
 
 ### Cooling estimator
-A function that takes the temperature history and determines the rate of that the accumulator is cooling.
+A function that takes the temperature history and determines the accumulator rate of cooling.
 This is used to determine the time until the accumulator cools down to the minimum acceptable temperature.
 
 ### Heating governor
