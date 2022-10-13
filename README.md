@@ -23,9 +23,9 @@ A function that takes the temperature history and determines the accumulator rat
 This is used to determine the time until the accumulator cools down to the minimum acceptable temperature.
 
 ### Heating governor
-Let the pump run if the power at present hour is cheapest available before hitting the minimum
+Let the pump run if the power at present hour is cheapest available before the accumulator is expected to hit the minimum temperature.
 
 ### Something with inertia
 The heating governance should not be changing all the time.
 If the power cost at now + 2h is cheaper than now, should we only let the pump run until it's barely warm enough to not hit the minimum?
-Perhaps the correct thing to do is to only run seldom enough that it's not an issue if the pump only runs for the duration between two iterations.
+Perhaps the correct thing to do is to only iterate on the control seldom enough that it's not an issue if the pump only runs for the duration between two iterations.
